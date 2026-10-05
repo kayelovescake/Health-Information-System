@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthHub PH — Reliable Health Information</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">+</span> HealthHub <span class="logo-ph">PH</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#topics">Health Topics</a>
+        <a href="#labtests">Lab Tests</a>
+        <a href="#newborn">Newborn Screening</a>
+        <a href="#wellness">Wellness</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Auth area: shows Login button OR user menu -->
+      <div class="auth-area" id="authArea">
+        <!-- Filled by script.js -->
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO / HOME ============ -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-tag">Trusted health information, in plain language</p>
+        <h1>Your guide to better health <span class="accent">in the Philippines</span></h1>
+        <p class="hero-sub">
+          Learn about common conditions, medical laboratory tests, newborn screening,
+          and everyday wellness — written for patients, families, and students.
+        </p>
+        <div class="hero-buttons">
+          <a href="#topics" class="btn btn-primary">Explore Health Topics</a>
+          <a href="#labtests" class="btn btn-outline">Understand Lab Tests</a>
+        </div>
+        <p class="hero-note" id="heroNote">Create a free account to bookmark articles and track your reading.</p>
+      </div>
+      <div class="hero-card">
+        <div class="tip-card">
+          <h3>Health Tip of the Day</h3>
+          <p id="dailyTip">Drink at least 8 glasses of water a day and eat a balanced meal with vegetables and fruits.</p>
+          <button class="btn-tip" id="newTipBtn">New Tip</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HEALTH TOPICS ============ -->
+  <section class="section" id="topics">
+    <div class="container">
+      <h2 class="section-title">Health Topics</h2>
+      <p class="section-sub">Browse common health concerns and what you can do about them.</p>
+
+      <div class="cards-grid" id="topicsGrid">
+        <!-- Cards injected by script.js so we can add "bookmark" for logged-in users -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LAB TESTS ============ -->
+  <section class="section section-alt" id="labtests">
+    <div class="container">
+      <h2 class="section-title">Understanding Medical Laboratory Tests</h2>
+      <p class="section-sub">A quick guide to common tests — what they check, how to prepare, and what results may mean.</p>
+
+      <div class="accordion" id="labAccordion">
+        <!-- Items injected by script.js -->
+      </div>
+      <p class="small-note">Always discuss your results with your doctor. Reference ranges vary by laboratory.</p>
+    </div>
+  </section>
+
+  <!-- ============ NEWBORN SCREENING ============ -->
+  <section class="section" id="newborn">
+    <div class="container newborn-wrap">
+      <div class="newborn-text">
+        <h2 class="section-title left">Newborn Screening (NBS)</h2>
+        <p>
+          Newborn screening is a simple blood test done 24–72 hours after birth to detect
+          conditions that can cause serious illness or disability if not treated early.
+          In the Philippines, NBS is available in hospitals, lying-in clinics, and rural health units.
+        </p>
+        <ul class="check-list">
+          <li>Done by pricking the baby's heel and collecting a few drops of blood on filter paper.</li>
+          <li>Screens for congenital hypothyroidism, galactosemia, phenylketonuria, and more.</li>
+          <li>Early detection and treatment can prevent mental retardation and death.</li>
+          <li>Ask your doctor or midwife about the Expanded Newborn Screening program.</li>
+        </ul>
+      </div>
+      <div class="newborn-stats">
+        <div class="stat-box">
+          <h3>24–72 hrs</h3>
+          <p>Ideal time after birth for screening</p>
+        </div>
+        <div class="stat-box">
+          <h3>28+</h3>
+          <p>Disorders covered by expanded screening</p>
+        </div>
+        <div class="stat-box">
+          <h3>Free</h3>
+          <p>Available through PhilHealth and public health programs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WELLNESS ============ -->
+  <section class="section section-alt" id="wellness">
+    <div class="container">
+      <h2 class="section-title">Wellness &amp; Preventive Care</h2>
+      <p class="section-sub">Small daily habits make a big difference in long-term health.</p>
+      <div class="wellness-grid">
+        <div class="wellness-card"><h4>Eat Right</h4><p>Follow Go, Grow, Glow foods. Limit salty, fatty, and sugary meals.</p></div>
+        <div class="wellness-card"><h4>Move Daily</h4><p>Aim for 30 minutes of activity — walking, jogging, or household chores count.</p></div>
+        <div class="wellness-card"><h4>Sleep Well</h4><p>Get 7–9 hours of sleep. Keep a consistent bedtime schedule.</p></div>
+        <div class="wellness-card"><h4>Get Checked</h4><p>Visit your barangay health center or doctor for regular check-ups.</p></div>
+        <div class="wellness-card"><h4>Mental Health</h4><p>Rest, connect with loved ones, and seek help when you feel overwhelmed.</p></div>
+        <div class="wellness-card"><h4>Vaccinations</h4><p>Keep immunizations up to date — for children and adults alike.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container about-wrap">
+      <h2 class="section-title left">About HealthHub PH</h2>
+      <p>
+        HealthHub PH is an educational project created to make reliable health information
+        accessible to Filipinos. We cover topics relevant to patients, students of medical
+        technology, and anyone who wants to understand their health better.
+      </p>
+      <p>
+        Our content is written in simple language and reviewed against public health guidelines
+        from the Department of Health (DOH), World Health Organization (WHO), and medical textbooks.
+      </p>
+      <div class="disclaimer-box">
+        <strong>Medical Disclaimer:</strong> This website is for educational and informational
+        purposes only. It does <em>not</em> replace professional medical advice, diagnosis, or treatment.
+        Always seek the advice of your physician or other qualified health provider with any
+        questions you may have regarding a medical condition.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact &amp; Feedback</h2>
+      <p class="section-sub">Have a question or topic suggestion? Send us a message.</p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" id="cName" placeholder="Your name" required />
+          <input type="email" id="cEmail" placeholder="Your email" required />
+        </div>
+        <textarea id="cMessage" rows="5" placeholder="Your message..." required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>HealthHub PH</h4>
+        <p>Reliable health information for every Filipino.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#topics">Health Topics</a>
+        <a href="#labtests">Lab Tests</a>
+        <a href="#newborn">Newborn Screening</a>
+      </div>
+      <div>
+        <h4>Emergency</h4>
+        <p>National Emergency Hotline: <strong>911</strong></p>
+        <p>DOH Hotline: <strong>1555</strong></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 HealthHub PH. For educational purposes only. Not a substitute for medical advice.</p>
+    </div>
+  </footer>
+
+  <!-- ============ LOGIN / SIGNUP MODAL ============ -->
+  <div class="modal-overlay" id="authModal" hidden>
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+
+      <!-- Login form -->
+      <div class="auth-form" id="loginForm">
+        <h3>Log In</h3>
+        <p class="auth-sub">Welcome back! Access your saved articles.</p>
+        <input type="text" id="loginUser" placeholder="Username" required />
+        <input type="password" id="loginPass" placeholder="Password" required />
+        <button class="btn btn-primary btn-block" id="loginBtn">Log In</button>
+        <p class="auth-error" id="loginError"></p>
+        <p class="auth-switch">No account yet? <a href="#" id="showSignup">Sign up</a></p>
+        <p class="auth-demo">Demo account — username: <strong>demo</strong> &nbsp; password: <strong>demo123</strong></p>
+      </div>
+
+      <!-- Signup form -->
+      <div class="auth-form" id="signupForm" hidden>
+        <h3>Create Account</h3>
+        <p class="auth-sub">It's free and lets you bookmark articles.</p>
+        <input type="text" id="signupName" placeholder="Full name" required />
+        <input type="text" id="signupUser" placeholder="Username" required />
+        <input type="password" id="signupPass" placeholder="Password (min. 6 characters)" required />
+        <button class="btn btn-primary btn-block" id="signupBtn">Sign Up</button>
+        <p class="auth-error" id="signupError"></p>
+        <p class="auth-switch">Already have an account? <a href="#" id="showLogin">Log in</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ BOOKMARKS PANEL (visible when logged in) ============ -->
+  <div class="bookmarks-panel" id="bookmarksPanel" hidden>
+    <div class="bookmarks-header">
+      <h4>My Bookmarks</h4>
+      <button id="closeBookmarks" class="modal-close" aria-label="Close">&times;</button>
+    </div>
+    <div id="bookmarksList" class="bookmarks-list">
+      <!-- filled by script.js -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
